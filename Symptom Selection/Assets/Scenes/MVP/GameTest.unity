@@ -1115,7 +1115,7 @@ MonoBehaviour:
   Q4: {fileID: 570380903}
   Incorrect: {fileID: 155977115}
   Text1: {fileID: 1566678946}
-  Text2: {fileID: 0}
+  Text2: {fileID: 659809323}
   Text3: {fileID: 0}
   Text4: {fileID: 0}
   sM: {fileID: 0}
@@ -1297,8 +1297,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The patient said that she feels itchy, so what kind of rash below she may
-    has?
+  m_Text: 
 --- !u!222 &659809324
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1476,8 +1475,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The patient said that she feels itchy, so what kind of rash below she may
-    has?
+  m_Text: Other kind of gameplay
 --- !u!222 &797382705
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3408,8 +3406,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The patient said that she feels itchy, so what kind of rash below she may
-    has?
+  m_Text: Other kind of gameplay
 --- !u!222 &1578281724
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3766,8 +3763,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The patient said that she feels itchy, so what kind of rash below she may
-    has?
+  m_Text: Other kind of gameplay
 --- !u!222 &1772601877
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -57,6 +57,7 @@ public class SM2 : MonoBehaviour
     {
         currentGameState = GameState.Q1State;
         ShowScreen(Q1);
+        Text2.text = "The patient said that she feels itchy, so what kind of rash below she may has?";
     }
     public void Question2()
     {
