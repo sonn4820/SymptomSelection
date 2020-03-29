@@ -23,15 +23,13 @@ public class SM2 : MonoBehaviour
     public Text Text4;
 
     public SM sM;
-    private string PN;
 
     // Use this for initialization
     void Start()
     {
         currentGameState = GameState.IntroState;
         ShowScreen(Intro);
-        PN = sM.PlayerName;
-        Text1.text = "Hello " + PN + ", how are you today?";
+        Text1.text = "Hello " + sM.PlayerName + ", how are you today?";
     }
 
     // Update is called once per frame

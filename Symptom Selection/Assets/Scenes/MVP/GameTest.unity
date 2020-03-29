@@ -1475,7 +1475,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Other kind of gameplay
+  m_Text: Other kind of gameplays
 --- !u!222 &797382705
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3406,7 +3406,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Other kind of gameplay
+  m_Text: Other kind of gameplays
 --- !u!222 &1578281724
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3763,7 +3763,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Other kind of gameplay
+  m_Text: Other kind of gameplays
 --- !u!222 &1772601877
 CanvasRenderer:
   m_ObjectHideFlags: 0
