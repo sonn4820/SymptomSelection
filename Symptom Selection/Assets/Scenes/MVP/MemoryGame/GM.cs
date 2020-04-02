@@ -135,7 +135,7 @@ public class GM : MonoBehaviour
             if(CountCorrectGuesses == GameGuesses)
             {
                 Debug.Log("Finished");
-                Debug.Log("Take" + CountGuesses + "guess(es)");
+                Debug.Log("Take " + CountGuesses + " guess(es)");
             }
         }
         void Shuffle(List<Sprite> list)
