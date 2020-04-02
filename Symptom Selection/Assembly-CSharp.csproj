@@ -64,8 +64,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scenes\MVP\DragDropTest\DragDrop.cs" />
     <Compile Include="Assets\Scenes\MVP\DragDropTest\ItemSlot.cs" />
-    <Compile Include="Assets\Scenes\MVP\SM.cs" />
-    <Compile Include="Assets\Scenes\MVP\SM2.cs" />
+    <Compile Include="Assets\Scenes\MVP\Enum\SM.cs" />
+    <Compile Include="Assets\Scenes\MVP\Enum\SM2.cs" />
+    <Compile Include="Assets\Scenes\MVP\MemoryGame\AddButton.cs" />
+    <Compile Include="Assets\Scenes\MVP\MemoryGame\GM.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/sonng/Documents/QU/GDD 211/Lab4/SymptomSelection/Symptom Selection/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
