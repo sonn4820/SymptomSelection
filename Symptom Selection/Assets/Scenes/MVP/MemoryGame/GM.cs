@@ -104,13 +104,13 @@ public class GM : MonoBehaviour
         }
     }
 
-        IEnumerator CheckIfThePuzzleMatch()
+        IEnumerator CheckIfThePuzzleMatch() // ienumerator creates a pause for the game
         {
-            yield return new WaitForSeconds(0.7f);
+            yield return new WaitForSeconds(1f); // make a pause
 
             if(firstGuessPuzzle == secondGuessPuzzle)
             {
-                yield return new WaitForSeconds(0.2f);
+                yield return new WaitForSeconds(0.5f);
 
                 btns[firstGuessIndex].interactable = false;  // can't touch if u get it correct
                 btns[secondGuessIndex].interactable = false;
@@ -125,7 +125,7 @@ public class GM : MonoBehaviour
                 btns[firstGuessIndex].image.sprite = bgImage;
                 btns[secondGuessIndex].image.sprite = bgImage;
             }
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.5f); // change it to WaitUntil for matching the name of the disease
 
             firstGuess = secondGuess = false;
         }
