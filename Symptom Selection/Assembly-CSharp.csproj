@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scenes\MVP\Enum\SM2.cs" />
     <Compile Include="Assets\Scenes\MVP\Flashcard\gameManagement.cs" />
     <Compile Include="Assets\Scenes\MVP\Flashcard\imagecon.cs" />
+    <Compile Include="Assets\Scenes\MVP\Flashcard\scoreEnd.cs" />
     <Compile Include="Assets\Scenes\MVP\MemoryGame\AddButton.cs" />
     <Compile Include="Assets\Scenes\MVP\MemoryGame\GM.cs" />
     <Reference Include="Unity.Timeline.Editor">

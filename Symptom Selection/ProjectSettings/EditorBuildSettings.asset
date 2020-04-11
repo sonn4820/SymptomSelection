@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MVP/Enum/GameTest.unity
     guid: 4961aa39cccad034ba1bdc90e9c50e56
+  - enabled: 1
+    path: Assets/Scenes/MVP/Flashcard/FC.unity
+    guid: ba7277334355bc947a57f0cef3036ae2
+  - enabled: 1
+    path: Assets/Scenes/MVP/Flashcard/End.unity
+    guid: dc1b8ab2e0ea8234a86116a4682999e0
   m_configObjects: {}
