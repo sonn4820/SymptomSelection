@@ -6,15 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MVP/Enum/TutorialTest.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Build/Begin.unity
+    guid: 12ba467880815c74ab3bdd2e13f5ddbe
   - enabled: 1
-    path: Assets/Scenes/MVP/Enum/GameTest.unity
-    guid: 4961aa39cccad034ba1bdc90e9c50e56
+    path: Assets/Scenes/Build/Play.unity
+    guid: 7f9398df15a2fc948ab4e86089f63b10
   - enabled: 1
-    path: Assets/Scenes/MVP/Flashcard/FC.unity
-    guid: ba7277334355bc947a57f0cef3036ae2
-  - enabled: 1
-    path: Assets/Scenes/MVP/Flashcard/End.unity
-    guid: dc1b8ab2e0ea8234a86116a4682999e0
+    path: Assets/Scenes/Build/Tutorial.unity
+    guid: fdc52792494c2434aa1aa6d2acd27512
   m_configObjects: {}
