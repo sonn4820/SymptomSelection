@@ -80,7 +80,7 @@ public class SMTutorial : MonoBehaviour
     }
     public void Exit()
     {
-        SceneManager.LoadScene("Begin");
+        SceneManager.LoadScene("Menu");
     }
 
 }
