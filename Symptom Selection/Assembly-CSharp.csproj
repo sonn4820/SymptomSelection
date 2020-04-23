@@ -63,7 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\Build\Script\GMBegin.cs" />
+    <Compile Include="Assets\Scenes\Build\Script\SMPlay1.cs" />
     <Compile Include="Assets\Scenes\Build\Script\SMTutorial.cs" />
+    <Compile Include="Assets\Scenes\Build\Script\Talk1.cs" />
     <Compile Include="Assets\Scenes\MVP\DragDropTest\DragDrop.cs" />
     <Compile Include="Assets\Scenes\MVP\DragDropTest\ItemSlot.cs" />
     <Compile Include="Assets\Scenes\MVP\Enum\SM.cs" />

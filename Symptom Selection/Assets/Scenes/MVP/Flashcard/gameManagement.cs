@@ -10,8 +10,8 @@ public class gameManagement : MonoBehaviour
     public Text Systext;
     public Text Score;
 
-    List<string> questions = new List<string>() {"Rash1", "Rash2", "Rash3", "Rash4" };
-    List<string> correctSelection = new List<string>() {"choice1", "choice2", "choice3", "choice4" };
+    List<string> questions = new List<string>() {"", "Eczema Atopic Dermatitis", "Fungal Tinea Dermatophyte", "Rosacea White", "Acne" };
+    List<string> correctSelection = new List<string>() {"", "choice3", "choice2", "choice1", "choice4" };
 
     public static string currentSelection;
     public static int textPointer;
@@ -40,7 +40,7 @@ public class gameManagement : MonoBehaviour
 
         if (answeredQuestion >= 4)
         {
-            SceneManager.LoadScene("End");
+            SceneManager.LoadScene("End1");
         }
         Debug.Log("Question" + answeredQuestion);
 

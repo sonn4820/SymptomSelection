@@ -37,4 +37,8 @@ public class scoreEnd : MonoBehaviour
             Say.text = "Wonderful";
         }
     }
+    public void Play2()
+    {
+        SceneManager.LoadScene("Play2");
+    }
 }

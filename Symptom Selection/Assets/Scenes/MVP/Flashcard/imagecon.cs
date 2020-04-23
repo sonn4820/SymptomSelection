@@ -18,7 +18,7 @@ public class imagecon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameManagement.loadQuestion == "Y")
+        if (gameManagement.loadQuestion == "Y") // make the choices are correct with the order
         {
             if (gameManagement.textPointer == 1)
             {

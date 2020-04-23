@@ -76,7 +76,7 @@ public class SMTutorial : MonoBehaviour
     }
     public void Play()
     {
-        SceneManager.LoadScene("Play");
+        SceneManager.LoadScene("Play1");
     }
     public void Exit()
     {
