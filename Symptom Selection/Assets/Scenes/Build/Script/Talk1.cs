@@ -5,12 +5,12 @@ using UnityEngine.UI;
 public class Talk1 : MonoBehaviour
 {
 
-    public float delay = 5f;
+    public float delay = 0.1f;
     public string fullText;
     private string currentText = "";
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         StartCoroutine(ShowText());
     }

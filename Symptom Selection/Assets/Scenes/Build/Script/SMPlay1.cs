@@ -35,9 +35,10 @@ public class SMPlay1 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
         FinalScore();
+        Debug.Log(S);
     }
 
     void ShowScreen(GameObject gameObjectToShow)
@@ -94,42 +95,42 @@ public class SMPlay1 : MonoBehaviour
     public void Q1IC()
     {
         Text1.text = "Incorrect";
-        S = S - 1;
+        S = S - 25;
     }
     public void Q1C()
     {
         Text1.text = "Correct";
-        S = S + 1;
+        S = S + 25;
     }
     public void Q2IC()
     {
         Text2.text = "Incorrect";
-        S = S - 1;
+        S = S - 25;
     }
     public void Q2C()
     {
         Text2.text = "Correct";
-        S = S + 1;
+        S = S + 25;
     }
     public void Q3IC()
     {
         Text3.text = "Incorrect";
-        S = S - 1;
+        S = S - 25;
     }
     public void Q3C()
     {
         Text3.text = "Correct";
-        S = S + 1;
+        S = S + 25;
     }
     public void Q4IC()
     {
         Text4.text = "Incorrect";
-        S = S - 1;
+        S = S - 25;
     }
     public void Q4C()
     {
         Text4.text = "Correct";
-        S = S + 1;
+        S = S + 25;
     }
     public void FinalScore()
     {
@@ -138,19 +139,19 @@ public class SMPlay1 : MonoBehaviour
         {
             Checkcheck.text = "You don't study, right?";
         }
-        else if (S == 1)
+        else if (S == 25)
         {
             Checkcheck.text = "Your mom feels bad about you";
         }
-        else if (S == 2)
+        else if (S == 50)
         {
             Checkcheck.text = "Come on, you're more than that";
         }
-        else if (S == 3)
+        else if (S == 75)
         {
             Checkcheck.text = "Hmmm, that's pretty good";
         }
-        else if (S == 4)
+        else if (S == 100)
         {
             Checkcheck.text = "Genius. I'm proud of you!";
         }
