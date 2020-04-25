@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Talk1 : MonoBehaviour
 {
 
-    public float delay = 1f;
+    public float delay = 5f;
     public string fullText;
     private string currentText = "";
 
