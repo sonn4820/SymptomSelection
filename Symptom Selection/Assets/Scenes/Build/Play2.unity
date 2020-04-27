@@ -1069,9 +1069,6 @@ MonoBehaviour:
   K3: {fileID: 1413578063}
   K4: {fileID: 1996403887}
   K5: {fileID: 932592792}
-  Text1: {fileID: 0}
-  Text2: {fileID: 0}
-  Text3: {fileID: 0}
   Checkcheck: {fileID: 1935316636}
   FinalScore: {fileID: 944102825}
   checkScores:
@@ -3011,8 +3008,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hi, let's test your skill. Each correct answer will give you 25 point.
-    If you get it wrong, you lose 25 point. Let see how many point can you get.
+  m_Text: Hi, let's test your skill. Each correct answer will give you 25 points.
+    If you get it wrong, you lose 25 points. Let see how many point can you get.
 --- !u!222 &1335544903
 CanvasRenderer:
   m_ObjectHideFlags: 0
