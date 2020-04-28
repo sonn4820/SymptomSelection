@@ -25,6 +25,9 @@ public class SMPlay1 : MonoBehaviour
     public Text Checkcheck;
 
     int S;
+    public AudioClip CorrectSound, IncorrectSound;
+    private AudioSource audioSource;
+
 
     // Use this for initialization
     void Start()
@@ -32,6 +35,7 @@ public class SMPlay1 : MonoBehaviour
         currentGameState = GameState.K1State;
         ShowScreen(K1);
         S = 0;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -96,41 +100,49 @@ public class SMPlay1 : MonoBehaviour
     {
         Text1.text = "Incorrect";
         S = S - 25;
+        audioSource.PlayOneShot(IncorrectSound);
     }
     public void Q1C()
     {
         Text1.text = "Correct";
         S = S + 25;
+        audioSource.PlayOneShot(CorrectSound);
     }
     public void Q2IC()
     {
         Text2.text = "Incorrect";
         S = S - 25;
+        audioSource.PlayOneShot(IncorrectSound);
     }
     public void Q2C()
     {
         Text2.text = "Correct";
         S = S + 25;
+        audioSource.PlayOneShot(CorrectSound);
     }
     public void Q3IC()
     {
         Text3.text = "Incorrect";
         S = S - 25;
+        audioSource.PlayOneShot(IncorrectSound);
     }
     public void Q3C()
     {
         Text3.text = "Correct";
         S = S + 25;
+        audioSource.PlayOneShot(CorrectSound);
     }
     public void Q4IC()
     {
         Text4.text = "Incorrect";
         S = S - 25;
+        audioSource.PlayOneShot(IncorrectSound);
     }
     public void Q4C()
     {
         Text4.text = "Correct";
         S = S + 25;
+        audioSource.PlayOneShot(CorrectSound);
     }
     public void FinalScore()
     {
