@@ -42,7 +42,6 @@ public class SMPlay1 : MonoBehaviour
     void Update()
     {
         FinalScore();
-        Debug.Log(S);
     }
 
     void ShowScreen(GameObject gameObjectToShow)

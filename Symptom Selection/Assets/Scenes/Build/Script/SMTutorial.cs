@@ -22,12 +22,14 @@ public class SMTutorial : MonoBehaviour
     public Text Text3;
     public Text Text4;
 
+    public GameObject panel1;
+
     // Use this for initialization
     void Start()
     {
         currentGameState = GameState.K1State;
         ShowScreen(K1);
-
+        panel1.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -76,7 +78,19 @@ public class SMTutorial : MonoBehaviour
     }
     public void Play()
     {
+        panel1.gameObject.SetActive(true);
+    }
+    public void Choice1()
+    {
         SceneManager.LoadScene("Play1");
+    }
+    public void Choice2()
+    {
+        SceneManager.LoadScene("Play2");
+    }
+    public void Choice3()
+    {
+        SceneManager.LoadScene("Play3");
     }
     public void Exit()
     {

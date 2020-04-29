@@ -20,21 +20,25 @@ public class SMPlay2 : MonoBehaviour
     public Text Checkcheck;
     public Text FinalScore;
 
+    public AudioClip CorrectSound;
+    private AudioSource audioSource;
+
     public List<CheckScore> checkScores;
     public int Score;
+
 
     // Use this for initialization
     void Start()
     {
         currentGameState = GameState.IntroState;
         ShowScreen(Intro);
-
-    }
+        audioSource = GetComponent<AudioSource>();
+}
 
     // Update is called once per frame
     void Update()
     {
-
+     
     }
 
     void ShowScreen(GameObject gameObjectToShow)
@@ -87,6 +91,7 @@ public class SMPlay2 : MonoBehaviour
             if(checkScores[i].correct == true)
             {
                 Score += 25;
+               
             }
         }
         FinalScore.text = "Score: " + Score;
@@ -111,5 +116,6 @@ public class SMPlay2 : MonoBehaviour
             Checkcheck.text = "Genius. I'm proud of you!";
         }
     }
+
  
 }
