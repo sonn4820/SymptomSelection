@@ -24,12 +24,19 @@ public class SMPlay1 : MonoBehaviour
     public Text TextFinal;
     public Text Checkcheck;
 
+    public Text HiText;
+    public string PN1;
     int S;
     public AudioClip CorrectSound, IncorrectSound;
     private AudioSource audioSource;
 
 
+
     // Use this for initialization
+    void Awake()
+    {
+        PN1 = PlayerPrefs.GetString("PN");
+    }
     void Start()
     {
         currentGameState = GameState.K1State;
@@ -42,6 +49,7 @@ public class SMPlay1 : MonoBehaviour
     void Update()
     {
         FinalScore();
+        HiText.text = "Hi " + PN1 + ", let's test your skill. Each correct answer will give you 25 points. If you get it wrong, you lose 25 points. Let see how many point can you get.";
     }
 
     void ShowScreen(GameObject gameObjectToShow)
@@ -82,14 +90,18 @@ public class SMPlay1 : MonoBehaviour
         currentGameState = GameState.K5State;
         ShowScreen(K5);
     }
-    public void Play()
-    {
-        SceneManager.LoadScene("Play1");
-    }
     public void CheckScore()
     {
         currentGameState = GameState.ScoreState;
         ShowScreen(Score);
+    }
+    public void Play()
+    {
+        SceneManager.LoadScene("Play2");
+    }
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void Exit()
     {
@@ -97,49 +109,49 @@ public class SMPlay1 : MonoBehaviour
     }
     public void Q1IC()
     {
-        Text1.text = "Incorrect";
+        Text1.text = "Sorry that is incorrect";
         S = S - 25;
         audioSource.PlayOneShot(IncorrectSound);
     }
     public void Q1C()
     {
-        Text1.text = "Correct";
+        Text1.text = "Correct! Nice Job!";
         S = S + 25;
         audioSource.PlayOneShot(CorrectSound);
     }
     public void Q2IC()
     {
-        Text2.text = "Incorrect";
+        Text2.text = "Sorry that is incorrect";
         S = S - 25;
         audioSource.PlayOneShot(IncorrectSound);
     }
     public void Q2C()
     {
-        Text2.text = "Correct";
+        Text2.text = "Correct! Nice Job!";
         S = S + 25;
         audioSource.PlayOneShot(CorrectSound);
     }
     public void Q3IC()
     {
-        Text3.text = "Incorrect";
+        Text3.text = "Sorry that is incorrect";
         S = S - 25;
         audioSource.PlayOneShot(IncorrectSound);
     }
     public void Q3C()
     {
-        Text3.text = "Correct";
+        Text3.text = "Correct! Nice Job!";
         S = S + 25;
         audioSource.PlayOneShot(CorrectSound);
     }
     public void Q4IC()
     {
-        Text4.text = "Incorrect";
+        Text4.text = "Sorry that is incorrect";
         S = S - 25;
         audioSource.PlayOneShot(IncorrectSound);
     }
     public void Q4C()
     {
-        Text4.text = "Correct";
+        Text4.text = "Correct! Nice Job!";
         S = S + 25;
         audioSource.PlayOneShot(CorrectSound);
     }

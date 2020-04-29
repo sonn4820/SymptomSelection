@@ -33,7 +33,7 @@ public class CheckScore : MonoBehaviour
             checkcorrect.text = "Incorrect";
         }
        
-
+        
         Debug.Log(correct);
     }
     

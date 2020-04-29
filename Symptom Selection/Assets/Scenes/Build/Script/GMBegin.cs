@@ -8,11 +8,21 @@ public class GMBegin : MonoBehaviour
 {
     public GameObject panel1;
     public GameObject panel2;
+    public InputField pName;
+    public string PlayerName;
+    public Text tellPlayerHi;
+
     void Start()
     {
         panel1.gameObject.SetActive(false);
         panel2.gameObject.SetActive(false);
+        
     }
+    private void Update()
+    {
+        PlayerPrefs.SetString("PN", pName.text);
+    }
+
     public void Tutorial()
     {
         SceneManager.LoadScene("Tutorial");
@@ -46,5 +56,10 @@ public class GMBegin : MonoBehaviour
     {
         panel1.gameObject.SetActive(false);
     }
-
+    public void SetGetName()
+    { 
+        PlayerName = pName.text;
+        tellPlayerHi.text = "Oh, here you are " + PlayerName + ", welcome to my classroom";
+        Debug.Log(PlayerPrefs.GetString("PN"));
+    }
 }

@@ -26,8 +26,15 @@ public class SMPlay2 : MonoBehaviour
     public List<CheckScore> checkScores;
     public int Score;
 
+    public string PN2;
+    public Text HiText;
+
 
     // Use this for initialization
+    void Awake()
+    {
+        PN2 = PlayerPrefs.GetString("PN");
+    }
     void Start()
     {
         currentGameState = GameState.IntroState;
@@ -38,7 +45,7 @@ public class SMPlay2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
+        HiText.text = "Hi there " + PN2 + ", today we will be matching Diseases to their proper symptoms. Each correct answer will give you 25 points. If you get it wrong, you lose 25 points. Let see how many point can you get.";
     }
 
     void ShowScreen(GameObject gameObjectToShow)
@@ -83,6 +90,14 @@ public class SMPlay2 : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("Menu");
+    }
+    public void Play()
+    {
+        SceneManager.LoadScene("Play1");
+    }
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void GameOver()
     {
