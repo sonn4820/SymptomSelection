@@ -29,6 +29,10 @@ public class SMPlay2 : MonoBehaviour
     public string PN2;
     public Text HiText;
 
+    public CheckScore cs1;
+    public CheckScore cs2;
+    public CheckScore cs3;
+    public CheckScore cs4;
 
     // Use this for initialization
     void Awake()
@@ -46,6 +50,7 @@ public class SMPlay2 : MonoBehaviour
     void Update()
     {
         HiText.text = "Hi there " + PN2 + ", today we will be matching Diseases to their proper symptoms. Each correct answer will give you 25 points. If you get it wrong, you lose 25 points. Let see how many point can you get.";
+        CSound();
     }
 
     void ShowScreen(GameObject gameObjectToShow)
@@ -59,8 +64,25 @@ public class SMPlay2 : MonoBehaviour
 
         gameObjectToShow.SetActive(true);
     }
-
-
+    public void CSound()
+    {
+        if (currentGameState == GameState.K1State && cs1.correct == true)
+        {
+            audioSource.PlayOneShot(CorrectSound);
+        }
+        if (currentGameState == GameState.K2State && cs2.correct == true)
+        {
+            audioSource.PlayOneShot(CorrectSound);
+        }
+        if (currentGameState == GameState.K3State && cs3.correct == true)
+        {
+            audioSource.PlayOneShot(CorrectSound);
+        }
+        if (currentGameState == GameState.K4State && cs4.correct == true)
+        {
+            audioSource.PlayOneShot(CorrectSound);
+        }
+    }
     public void Knowledge1()
     {
         currentGameState = GameState.K1State;
@@ -111,7 +133,7 @@ public class SMPlay2 : MonoBehaviour
         FinalScore.text = "Score: " + Score;
         if (Score <= 0)
         {
-            Checkcheck.text = "You don't study, right?";
+            Checkcheck.text = "Such a disgrace?";
         }
         else if (Score == 25)
         {
@@ -123,7 +145,7 @@ public class SMPlay2 : MonoBehaviour
         }
         else if (Score == 75)
         {
-            Checkcheck.text = "Hmmm, that's pretty good";
+            Checkcheck.text = "Hey, that was pretty good";
         }
         else if (Score == 100)
         {

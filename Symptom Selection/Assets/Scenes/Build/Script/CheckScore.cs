@@ -26,12 +26,9 @@ public class CheckScore : MonoBehaviour
         {
             correct = true;
             checkcorrect.text = "Correct";
-            
+            checkcorrect.GetComponent<Text>().color = Color.green;
         }
-        if (correct == false)
-        {
-            checkcorrect.text = "Incorrect";
-        }
+
        
         
         Debug.Log(correct);

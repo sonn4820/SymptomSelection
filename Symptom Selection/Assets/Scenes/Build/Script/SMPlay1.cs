@@ -138,6 +138,7 @@ public class SMPlay1 : MonoBehaviour
             S = S + 25;
             audioSource.PlayOneShot(CorrectSound);
             b1c.GetComponent<Image>().color = Color.green;
+            Text1.GetComponent<Text>().color = Color.green;
             b1i1.gameObject.SetActive(false);
             b1i2.gameObject.SetActive(false);
             b1i3.gameObject.SetActive(false);
@@ -148,6 +149,7 @@ public class SMPlay1 : MonoBehaviour
             S = S + 25;
             audioSource.PlayOneShot(CorrectSound);
             b2c.GetComponent<Image>().color = Color.green;
+            Text2.GetComponent<Text>().color = Color.green;
             b2i1.gameObject.SetActive(false);
             b2i2.gameObject.SetActive(false);
             b2i3.gameObject.SetActive(false);
@@ -158,6 +160,7 @@ public class SMPlay1 : MonoBehaviour
             S = S + 25;
             audioSource.PlayOneShot(CorrectSound);
             b3c.GetComponent<Image>().color = Color.green;
+            Text3.GetComponent<Text>().color = Color.green;
             b3i1.gameObject.SetActive(false);
             b3i2.gameObject.SetActive(false);
             b3i3.gameObject.SetActive(false);
@@ -168,6 +171,7 @@ public class SMPlay1 : MonoBehaviour
             S = S + 25;
             audioSource.PlayOneShot(CorrectSound);
             b4c.GetComponent<Image>().color = Color.green;
+            Text4.GetComponent<Text>().color = Color.green;
             b4i1.gameObject.SetActive(false);
             b4i2.gameObject.SetActive(false);
             b4i3.gameObject.SetActive(false);
@@ -181,6 +185,7 @@ public class SMPlay1 : MonoBehaviour
             Text1.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b1i1.GetComponent<Image>().color = Color.red;
+            Text1.GetComponent<Text>().color = Color.red;
             b1c.gameObject.SetActive(false);
             b1i2.gameObject.SetActive(false);
             b1i3.gameObject.SetActive(false);
@@ -190,6 +195,7 @@ public class SMPlay1 : MonoBehaviour
             Text2.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b2i1.GetComponent<Image>().color = Color.red;
+            Text2.GetComponent<Text>().color = Color.red;
             b2c.gameObject.SetActive(false);
             b2i2.gameObject.SetActive(false);
             b2i3.gameObject.SetActive(false);
@@ -199,6 +205,7 @@ public class SMPlay1 : MonoBehaviour
             Text3.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b3i1.GetComponent<Image>().color = Color.red;
+            Text3.GetComponent<Text>().color = Color.red;
             b3c.gameObject.SetActive(false);
             b3i2.gameObject.SetActive(false);
             b3i3.gameObject.SetActive(false);
@@ -208,6 +215,7 @@ public class SMPlay1 : MonoBehaviour
             Text4.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b4i1.GetComponent<Image>().color = Color.red;
+            Text4.GetComponent<Text>().color = Color.red;
             b4c.gameObject.SetActive(false);
             b4i2.gameObject.SetActive(false);
             b4i3.gameObject.SetActive(false);
@@ -220,6 +228,7 @@ public class SMPlay1 : MonoBehaviour
             Text1.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b1i2.GetComponent<Image>().color = Color.red;
+            Text1.GetComponent<Text>().color = Color.red;
             b1c.gameObject.SetActive(false);
             b1i1.gameObject.SetActive(false);
             b1i3.gameObject.SetActive(false);
@@ -229,6 +238,7 @@ public class SMPlay1 : MonoBehaviour
             Text2.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b2i2.GetComponent<Image>().color = Color.red;
+            Text2.GetComponent<Text>().color = Color.red;
             b2c.gameObject.SetActive(false);
             b2i1.gameObject.SetActive(false);
             b2i3.gameObject.SetActive(false);
@@ -238,6 +248,7 @@ public class SMPlay1 : MonoBehaviour
             Text3.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b3i2.GetComponent<Image>().color = Color.red;
+            Text3.GetComponent<Text>().color = Color.red;
             b3c.gameObject.SetActive(false);
             b3i1.gameObject.SetActive(false);
             b3i3.gameObject.SetActive(false);
@@ -247,6 +258,7 @@ public class SMPlay1 : MonoBehaviour
             Text4.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b4i2.GetComponent<Image>().color = Color.red;
+            Text4.GetComponent<Text>().color = Color.red;
             b4c.gameObject.SetActive(false);
             b4i1.gameObject.SetActive(false);
             b4i3.gameObject.SetActive(false);
@@ -259,6 +271,7 @@ public class SMPlay1 : MonoBehaviour
             Text1.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b1i3.GetComponent<Image>().color = Color.red;
+            Text1.GetComponent<Text>().color = Color.red;
             b1c.gameObject.SetActive(false);
             b1i2.gameObject.SetActive(false);
             b1i1.gameObject.SetActive(false);
@@ -268,6 +281,7 @@ public class SMPlay1 : MonoBehaviour
             Text2.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b2i3.GetComponent<Image>().color = Color.red;
+            Text2.GetComponent<Text>().color = Color.red;
             b2c.gameObject.SetActive(false);
             b2i2.gameObject.SetActive(false);
             b2i1.gameObject.SetActive(false);
@@ -277,6 +291,7 @@ public class SMPlay1 : MonoBehaviour
             Text3.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b3i3.GetComponent<Image>().color = Color.red;
+            Text3.GetComponent<Text>().color = Color.red;
             b3c.gameObject.SetActive(false);
             b3i2.gameObject.SetActive(false);
             b3i1.gameObject.SetActive(false);
@@ -286,6 +301,7 @@ public class SMPlay1 : MonoBehaviour
             Text4.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b4i3.GetComponent<Image>().color = Color.red;
+            Text4.GetComponent<Text>().color = Color.red;
             b4c.gameObject.SetActive(false);
             b4i2.gameObject.SetActive(false);
             b4i1.gameObject.SetActive(false);
@@ -297,7 +313,7 @@ public class SMPlay1 : MonoBehaviour
         TextFinal.text = "Your Score is " + S;
         if (S <= 0)
         {
-            Checkcheck.text = "You don't study, right?";
+            Checkcheck.text = "Such a disgrace";
         }
         else if (S == 25)
         {
@@ -309,7 +325,7 @@ public class SMPlay1 : MonoBehaviour
         }
         else if (S == 75)
         {
-            Checkcheck.text = "Hmmm, that's pretty good";
+            Checkcheck.text = "Hey, that was pretty good";
         }
         else if (S == 100)
         {
