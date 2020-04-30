@@ -22,16 +22,21 @@ public class CheckScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(SS.localPosition == rightpos)
+
+    }
+    public void CheckC()
+    {
+        if (SS.localPosition == rightpos)
         {
             correct = true;
             checkcorrect.text = "Correct";
             checkcorrect.GetComponent<Text>().color = Color.green;
         }
-
-       
-        
-        Debug.Log(correct);
+        else
+        {
+            correct = false;
+            checkcorrect.text = "Incorrect";
+            checkcorrect.GetComponent<Text>().color = Color.red;
+        }
     }
-    
 }

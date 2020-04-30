@@ -34,6 +34,8 @@ public class SMPlay2 : MonoBehaviour
     public CheckScore cs3;
     public CheckScore cs4;
 
+    bool HasPlayed;
+
     // Use this for initialization
     void Awake()
     {
@@ -44,7 +46,8 @@ public class SMPlay2 : MonoBehaviour
         currentGameState = GameState.IntroState;
         ShowScreen(Intro);
         audioSource = GetComponent<AudioSource>();
-}
+        HasPlayed = false;
+    }
 
     // Update is called once per frame
     void Update()
@@ -66,42 +69,50 @@ public class SMPlay2 : MonoBehaviour
     }
     public void CSound()
     {
-        if (currentGameState == GameState.K1State && cs1.correct == true)
+        if (currentGameState == GameState.K1State && cs1.correct == true && HasPlayed == false)
         {
             audioSource.PlayOneShot(CorrectSound);
+            HasPlayed = true;
         }
-        if (currentGameState == GameState.K2State && cs2.correct == true)
+        if (currentGameState == GameState.K2State && cs2.correct == true && HasPlayed == false)
         {
             audioSource.PlayOneShot(CorrectSound);
+            HasPlayed = true;
         }
-        if (currentGameState == GameState.K3State && cs3.correct == true)
+        if (currentGameState == GameState.K3State && cs3.correct == true && HasPlayed == false)
         {
             audioSource.PlayOneShot(CorrectSound);
+            HasPlayed = true;
         }
-        if (currentGameState == GameState.K4State && cs4.correct == true)
+        if (currentGameState == GameState.K4State && cs4.correct == true && HasPlayed == false)
         {
             audioSource.PlayOneShot(CorrectSound);
+            HasPlayed = true;
         }
     }
     public void Knowledge1()
     {
         currentGameState = GameState.K1State;
         ShowScreen(K1);
+        HasPlayed = false;
     }
     public void Knowledge2()
     {
         currentGameState = GameState.K2State;
         ShowScreen(K2);
+        HasPlayed = false;
     }
     public void Knowledge3()
     {
         currentGameState = GameState.K3State;
         ShowScreen(K3);
+        HasPlayed = false;
     }
     public void Knowledge4()
     {
         currentGameState = GameState.K4State;
         ShowScreen(K4);
+        HasPlayed = false;
     }
     public void Knowledge5()
     {

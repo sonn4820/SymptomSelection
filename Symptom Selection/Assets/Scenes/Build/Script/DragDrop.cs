@@ -9,12 +9,13 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
-    
+    private CheckScore CC;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        CC = GetComponent<CheckScore>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -28,6 +29,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         //Debug.Log("OnDrag");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor; // change the position of the dragged image depended on the canvas scale
+        
+
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -35,7 +38,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         //Debug.Log("OnEndDrag");
         canvasGroup.alpha = 1f; // return to normal when released
         canvasGroup.blocksRaycasts = true; // turn on the raycast
-
+        CC.CheckC();
     }
 
     public void OnPointerDown(PointerEventData eventData)
