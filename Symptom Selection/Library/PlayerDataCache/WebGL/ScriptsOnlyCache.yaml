@@ -33,6 +33,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Build/Menu.unity:
@@ -66,6 +67,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11796}
     - Class: 114
       Script: {instanceID: 12208}
+    - Class: 114
+      Script: {instanceID: 12408}
     - Class: 114
       Script: {instanceID: 12468}
     - Class: 114
@@ -240,6 +243,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -313,7 +320,7 @@ ScriptsOnlyBuild:
     className: scoreEnd
   - hash:
       serializedVersion: 2
-      Hash: a986d8f1f8f72be7fdc87eeec7a91bf6
+      Hash: 2e27b1771bac739197e83439857bf7c5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CheckScore
@@ -433,7 +440,7 @@ ScriptsOnlyBuild:
     className: gameManagement
   - hash:
       serializedVersion: 2
-      Hash: f6eddaaa37624e2683b750e54c6cd28f
+      Hash: 7fdb01e2390cf7b9e44e03eec22f5616
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SMTutorial
@@ -541,7 +548,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: 2e7068260c67d9040be2bc135106125a
+      Hash: 849564f73f138f1bc910b781de823d0f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SMPlay2
@@ -625,7 +632,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: f475b0f03578fcbe2bf7fbc585c6c650
+      Hash: 665be0ba95af428151578c11b3caddb2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GMBegin
@@ -751,7 +758,7 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
-      Hash: 5bd4b689efba7db90fcafc0907677943
+      Hash: 0fb6ca0c0f1ac71bb15b989a332c2db3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SMPlay1

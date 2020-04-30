@@ -910,7 +910,7 @@ GameObject:
   - component: {fileID: 143756897}
   - component: {fileID: 143756896}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: i2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -980,7 +980,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q2IC
+        m_MethodName: Incorrect2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1039,7 +1039,7 @@ GameObject:
   - component: {fileID: 150334821}
   - component: {fileID: 150334820}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: i2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1109,7 +1109,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q1IC
+        m_MethodName: Incorrect2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1986,7 +1986,7 @@ GameObject:
   - component: {fileID: 589677658}
   - component: {fileID: 589677657}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: i1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2056,7 +2056,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q3IC
+        m_MethodName: Incorrect1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2700,6 +2700,22 @@ MonoBehaviour:
   Text4: {fileID: 2103719082}
   TextFinal: {fileID: 858542196}
   Checkcheck: {fileID: 1088035528}
+  b1c: {fileID: 1676875523}
+  b1i1: {fileID: 1890880696}
+  b1i2: {fileID: 150334820}
+  b1i3: {fileID: 923315113}
+  b2c: {fileID: 1559696615}
+  b2i1: {fileID: 2014470886}
+  b2i2: {fileID: 143756896}
+  b2i3: {fileID: 1411396673}
+  b3c: {fileID: 2074562224}
+  b3i1: {fileID: 589677657}
+  b3i2: {fileID: 1985167175}
+  b3i3: {fileID: 1156726179}
+  b4c: {fileID: 1133761656}
+  b4i1: {fileID: 1585662899}
+  b4i2: {fileID: 1142034374}
+  b4i3: {fileID: 1336011235}
   HiText: {fileID: 924268809}
   PN1: 
   CorrectSound: {fileID: 8300000, guid: e3618eb06e83b06478da55e04f06ae4b, type: 3}
@@ -3019,7 +3035,7 @@ GameObject:
   - component: {fileID: 923315114}
   - component: {fileID: 923315113}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: i1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3089,7 +3105,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q1IC
+        m_MethodName: Incorrect1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3658,7 +3674,7 @@ GameObject:
   - component: {fileID: 1133761657}
   - component: {fileID: 1133761656}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3728,7 +3744,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q4C
+        m_MethodName: Correct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3787,7 +3803,7 @@ GameObject:
   - component: {fileID: 1142034375}
   - component: {fileID: 1142034374}
   m_Layer: 5
-  m_Name: Button (6)
+  m_Name: i2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3857,7 +3873,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q4IC
+        m_MethodName: Incorrect2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3916,7 +3932,7 @@ GameObject:
   - component: {fileID: 1156726180}
   - component: {fileID: 1156726179}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: i3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3986,7 +4002,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q3IC
+        m_MethodName: Incorrect3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4690,7 +4706,7 @@ GameObject:
   - component: {fileID: 1336011236}
   - component: {fileID: 1336011235}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: i3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4760,7 +4776,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q4IC
+        m_MethodName: Incorrect3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4898,7 +4914,7 @@ GameObject:
   - component: {fileID: 1411396674}
   - component: {fileID: 1411396673}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: i3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4968,7 +4984,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q2IC
+        m_MethodName: Incorrect3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5104,7 +5120,7 @@ GameObject:
   - component: {fileID: 1559696616}
   - component: {fileID: 1559696615}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5174,7 +5190,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q2C
+        m_MethodName: Correct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5233,7 +5249,7 @@ GameObject:
   - component: {fileID: 1585662900}
   - component: {fileID: 1585662899}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: i1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5303,7 +5319,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q4IC
+        m_MethodName: Incorrect1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5578,7 +5594,7 @@ GameObject:
   - component: {fileID: 1676875524}
   - component: {fileID: 1676875523}
   m_Layer: 5
-  m_Name: Button (6)
+  m_Name: c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5648,7 +5664,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q1C
+        m_MethodName: Correct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6012,7 +6028,7 @@ GameObject:
   - component: {fileID: 1890880697}
   - component: {fileID: 1890880696}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: i3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6082,7 +6098,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q1IC
+        m_MethodName: Incorrect3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6218,7 +6234,7 @@ GameObject:
   - component: {fileID: 1985167176}
   - component: {fileID: 1985167175}
   m_Layer: 5
-  m_Name: Button (6)
+  m_Name: i2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6288,7 +6304,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q3IC
+        m_MethodName: Incorrect2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6507,7 +6523,7 @@ GameObject:
   - component: {fileID: 2014470887}
   - component: {fileID: 2014470886}
   m_Layer: 5
-  m_Name: Button (6)
+  m_Name: i1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6577,7 +6593,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q2IC
+        m_MethodName: Incorrect1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6946,7 +6962,7 @@ GameObject:
   - component: {fileID: 2074562225}
   - component: {fileID: 2074562224}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7016,7 +7032,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841444780}
-        m_MethodName: Q3C
+        m_MethodName: Correct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

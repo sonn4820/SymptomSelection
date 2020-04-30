@@ -24,6 +24,26 @@ public class SMPlay1 : MonoBehaviour
     public Text TextFinal;
     public Text Checkcheck;
 
+    public Button b1c;
+    public Button b1i1;
+    public Button b1i2;
+    public Button b1i3;
+
+    public Button b2c;
+    public Button b2i1;
+    public Button b2i2;
+    public Button b2i3;
+
+    public Button b3c;
+    public Button b3i1;
+    public Button b3i2;
+    public Button b3i3;
+
+    public Button b4c;
+    public Button b4i1;
+    public Button b4i2;
+    public Button b4i3;
+
     public Text HiText;
     public string PN1;
     int S;
@@ -50,6 +70,8 @@ public class SMPlay1 : MonoBehaviour
     {
         FinalScore();
         HiText.text = "Hi " + PN1 + ", let's test your skill. Each correct answer will give you 25 points. If you get it wrong, you lose 25 points. Let see how many point can you get.";
+        
+ 
     }
 
     void ShowScreen(GameObject gameObjectToShow)
@@ -107,54 +129,169 @@ public class SMPlay1 : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
-    public void Q1IC()
+    
+    public void Correct()
     {
-        Text1.text = "Sorry that is incorrect";
-        S = S - 25;
-        audioSource.PlayOneShot(IncorrectSound);
+        if (currentGameState == GameState.K2State)
+        {
+            Text1.text = "Correct! Nice Job!";
+            S = S + 25;
+            audioSource.PlayOneShot(CorrectSound);
+            b1c.GetComponent<Image>().color = Color.green;
+            b1i1.gameObject.SetActive(false);
+            b1i2.gameObject.SetActive(false);
+            b1i3.gameObject.SetActive(false);
+        }
+        if (currentGameState == GameState.K3State)
+        {
+            Text2.text = "Correct! Nice Job!";
+            S = S + 25;
+            audioSource.PlayOneShot(CorrectSound);
+            b2c.GetComponent<Image>().color = Color.green;
+            b2i1.gameObject.SetActive(false);
+            b2i2.gameObject.SetActive(false);
+            b2i3.gameObject.SetActive(false);
+        }
+        if (currentGameState == GameState.K4State)
+        {
+            Text3.text = "Correct! Nice Job!";
+            S = S + 25;
+            audioSource.PlayOneShot(CorrectSound);
+            b3c.GetComponent<Image>().color = Color.green;
+            b3i1.gameObject.SetActive(false);
+            b3i2.gameObject.SetActive(false);
+            b3i3.gameObject.SetActive(false);
+        }
+        if (currentGameState == GameState.K5State)
+        {
+            Text4.text = "Correct! Nice Job!";
+            S = S + 25;
+            audioSource.PlayOneShot(CorrectSound);
+            b4c.GetComponent<Image>().color = Color.green;
+            b4i1.gameObject.SetActive(false);
+            b4i2.gameObject.SetActive(false);
+            b4i3.gameObject.SetActive(false);
+        }
+
     }
-    public void Q1C()
+    public void Incorrect1()
     {
-        Text1.text = "Correct! Nice Job!";
-        S = S + 25;
-        audioSource.PlayOneShot(CorrectSound);
+        if (currentGameState == GameState.K2State)
+        {
+            Text1.text = "Sorry, that is incorrect";
+            audioSource.PlayOneShot(IncorrectSound);
+            b1i1.GetComponent<Image>().color = Color.red;
+            b1c.gameObject.SetActive(false);
+            b1i2.gameObject.SetActive(false);
+            b1i3.gameObject.SetActive(false);
+        }
+        if (currentGameState == GameState.K3State)
+        {
+            Text2.text = "Sorry, that is incorrect";
+            audioSource.PlayOneShot(IncorrectSound);
+            b2i1.GetComponent<Image>().color = Color.red;
+            b2c.gameObject.SetActive(false);
+            b2i2.gameObject.SetActive(false);
+            b2i3.gameObject.SetActive(false);
+        }
+        if (currentGameState == GameState.K4State)
+        {
+            Text3.text = "Sorry, that is incorrect";
+            audioSource.PlayOneShot(IncorrectSound);
+            b3i1.GetComponent<Image>().color = Color.red;
+            b3c.gameObject.SetActive(false);
+            b3i2.gameObject.SetActive(false);
+            b3i3.gameObject.SetActive(false);
+        }
+        if (currentGameState == GameState.K5State)
+        {
+            Text4.text = "Sorry, that is incorrect";
+            audioSource.PlayOneShot(IncorrectSound);
+            b4i1.GetComponent<Image>().color = Color.red;
+            b4c.gameObject.SetActive(false);
+            b4i2.gameObject.SetActive(false);
+            b4i3.gameObject.SetActive(false);
+        }
     }
-    public void Q2IC()
+    public void Incorrect2()
     {
-        Text2.text = "Sorry that is incorrect";
-        S = S - 25;
-        audioSource.PlayOneShot(IncorrectSound);
+        if (currentGameState == GameState.K2State)
+        {
+            Text1.text = "Sorry, that is incorrect";
+            audioSource.PlayOneShot(IncorrectSound);
+            b1i2.GetComponent<Image>().color = Color.red;
+            b1c.gameObject.SetActive(false);
+            b1i1.gameObject.SetActive(false);
+            b1i3.gameObject.SetActive(false);
+        }
+        if (currentGameState == GameState.K3State)
+        {
+            Text2.text = "Sorry, that is incorrect";
+            audioSource.PlayOneShot(IncorrectSound);
+            b2i2.GetComponent<Image>().color = Color.red;
+            b2c.gameObject.SetActive(false);
+            b2i1.gameObject.SetActive(false);
+            b2i3.gameObject.SetActive(false);
+        }
+        if (currentGameState == GameState.K4State)
+        {
+            Text3.text = "Sorry, that is incorrect";
+            audioSource.PlayOneShot(IncorrectSound);
+            b3i2.GetComponent<Image>().color = Color.red;
+            b3c.gameObject.SetActive(false);
+            b3i1.gameObject.SetActive(false);
+            b3i3.gameObject.SetActive(false);
+        }
+        if (currentGameState == GameState.K5State)
+        {
+            Text4.text = "Sorry, that is incorrect";
+            audioSource.PlayOneShot(IncorrectSound);
+            b4i2.GetComponent<Image>().color = Color.red;
+            b4c.gameObject.SetActive(false);
+            b4i1.gameObject.SetActive(false);
+            b4i3.gameObject.SetActive(false);
+        }
     }
-    public void Q2C()
+    public void Incorrect3()
     {
-        Text2.text = "Correct! Nice Job!";
-        S = S + 25;
-        audioSource.PlayOneShot(CorrectSound);
+        if (currentGameState == GameState.K2State)
+        {
+            Text1.text = "Sorry, that is incorrect";
+            audioSource.PlayOneShot(IncorrectSound);
+            b1i3.GetComponent<Image>().color = Color.red;
+            b1c.gameObject.SetActive(false);
+            b1i2.gameObject.SetActive(false);
+            b1i1.gameObject.SetActive(false);
+        }
+        if (currentGameState == GameState.K3State)
+        {
+            Text2.text = "Sorry, that is incorrect";
+            audioSource.PlayOneShot(IncorrectSound);
+            b2i3.GetComponent<Image>().color = Color.red;
+            b2c.gameObject.SetActive(false);
+            b2i2.gameObject.SetActive(false);
+            b2i1.gameObject.SetActive(false);
+        }
+        if (currentGameState == GameState.K4State)
+        {
+            Text3.text = "Sorry, that is incorrect";
+            audioSource.PlayOneShot(IncorrectSound);
+            b3i3.GetComponent<Image>().color = Color.red;
+            b3c.gameObject.SetActive(false);
+            b3i2.gameObject.SetActive(false);
+            b3i1.gameObject.SetActive(false);
+        }
+        if (currentGameState == GameState.K5State)
+        {
+            Text4.text = "Sorry, that is incorrect";
+            audioSource.PlayOneShot(IncorrectSound);
+            b4i3.GetComponent<Image>().color = Color.red;
+            b4c.gameObject.SetActive(false);
+            b4i2.gameObject.SetActive(false);
+            b4i1.gameObject.SetActive(false);
+        }
     }
-    public void Q3IC()
-    {
-        Text3.text = "Sorry that is incorrect";
-        S = S - 25;
-        audioSource.PlayOneShot(IncorrectSound);
-    }
-    public void Q3C()
-    {
-        Text3.text = "Correct! Nice Job!";
-        S = S + 25;
-        audioSource.PlayOneShot(CorrectSound);
-    }
-    public void Q4IC()
-    {
-        Text4.text = "Sorry that is incorrect";
-        S = S - 25;
-        audioSource.PlayOneShot(IncorrectSound);
-    }
-    public void Q4C()
-    {
-        Text4.text = "Correct! Nice Job!";
-        S = S + 25;
-        audioSource.PlayOneShot(CorrectSound);
-    }
+
     public void FinalScore()
     {
         TextFinal.text = "Your Score is " + S;

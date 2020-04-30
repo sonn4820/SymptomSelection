@@ -106,7 +106,6 @@ public class SMPlay2 : MonoBehaviour
             if(checkScores[i].correct == true)
             {
                 Score += 25;
-               
             }
         }
         FinalScore.text = "Score: " + Score;
