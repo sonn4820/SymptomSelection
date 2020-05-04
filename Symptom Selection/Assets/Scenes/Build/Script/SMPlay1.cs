@@ -71,8 +71,6 @@ public class SMPlay1 : MonoBehaviour
         FinalScore();
         HiText.text = "Hello " + PN1 + ", This quiz will test your knowledge of certain dermatological conditions.  Each correct answer will add 25 points to your total score.  Each wrong answer will deduct 25 points from your total score.  The optimal score is 100 points. Good Luck!";
 
-
-
     }
 
     void ShowScreen(GameObject gameObjectToShow)
@@ -140,6 +138,7 @@ public class SMPlay1 : MonoBehaviour
             audioSource.PlayOneShot(CorrectSound);
             b1c.GetComponent<Image>().color = Color.green;
             Text1.GetComponent<Text>().color = Color.green;
+            b1c.GetComponent<Button>().interactable = false;
             b1i1.gameObject.SetActive(false);
             b1i2.gameObject.SetActive(false);
             b1i3.gameObject.SetActive(false);
@@ -151,6 +150,7 @@ public class SMPlay1 : MonoBehaviour
             audioSource.PlayOneShot(CorrectSound);
             b2c.GetComponent<Image>().color = Color.green;
             Text2.GetComponent<Text>().color = Color.green;
+            b2c.GetComponent<Button>().interactable = false;
             b2i1.gameObject.SetActive(false);
             b2i2.gameObject.SetActive(false);
             b2i3.gameObject.SetActive(false);
@@ -162,6 +162,7 @@ public class SMPlay1 : MonoBehaviour
             audioSource.PlayOneShot(CorrectSound);
             b3c.GetComponent<Image>().color = Color.green;
             Text3.GetComponent<Text>().color = Color.green;
+            b3c.GetComponent<Button>().interactable = false;
             b3i1.gameObject.SetActive(false);
             b3i2.gameObject.SetActive(false);
             b3i3.gameObject.SetActive(false);
@@ -173,6 +174,7 @@ public class SMPlay1 : MonoBehaviour
             audioSource.PlayOneShot(CorrectSound);
             b4c.GetComponent<Image>().color = Color.green;
             Text4.GetComponent<Text>().color = Color.green;
+            b4c.GetComponent<Button>().interactable = false;
             b4i1.gameObject.SetActive(false);
             b4i2.gameObject.SetActive(false);
             b4i3.gameObject.SetActive(false);
