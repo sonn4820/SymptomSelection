@@ -2996,7 +2996,7 @@ MonoBehaviour:
   b4i1: {fileID: 1585662899}
   b4i2: {fileID: 1142034374}
   b4i3: {fileID: 1336011235}
-  HiText: {fileID: 0}
+  HiText: {fileID: 1621885967}
   PN1: 
   CorrectSound: {fileID: 8300000, guid: e3618eb06e83b06478da55e04f06ae4b, type: 3}
   IncorrectSound: {fileID: 8300000, guid: 7e61ffba5d75abd4eae9468c6ce1dee6, type: 3}

@@ -69,8 +69,10 @@ public class SMPlay1 : MonoBehaviour
     void Update()
     {
         FinalScore();
-        
- 
+        HiText.text = "Hello " + PN1 + ", This quiz will test your knowledge of certain dermatological conditions.  Each correct answer will add 25 points to your total score.  Each wrong answer will deduct 25 points from your total score.  The optimal score is 100 points. Good Luck!";
+
+
+
     }
 
     void ShowScreen(GameObject gameObjectToShow)
