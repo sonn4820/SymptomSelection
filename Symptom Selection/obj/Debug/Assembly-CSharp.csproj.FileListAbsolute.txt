@@ -274,3 +274,5 @@ C:\Users\sonng\Documents\QU\GDD 211\Lab4\SymptomSelection\Symptom Selection\obj\
 C:\Users\sonng\Documents\QU\GDD 211\Lab4\SymptomSelection\Symptom Selection\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\sonng\Documents\QU\GDD 211\Lab4\SymptomSelection\Symptom Selection\obj\Debug\Assembly-CSharp.dll
 C:\Users\sonng\Documents\QU\GDD 211\Lab4\SymptomSelection\Symptom Selection\obj\Debug\Assembly-CSharp.pdb
+C:\Users\sonng\Documents\QU\GDD 211\Lab4\SymptomSelection\Symptom Selection\Temp\bin\Debug\UnityEngine.WebGLModule.dll
+C:\Users\sonng\Documents\QU\GDD 211\Lab4\SymptomSelection\Symptom Selection\Temp\bin\Debug\UnityEngine.WebGLModule.pdb

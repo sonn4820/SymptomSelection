@@ -10,19 +10,31 @@ public class CheckScore : MonoBehaviour
     public bool correct;
     RectTransform SS;
     public Text checkcorrect;
-
+    public List<Vector3> anchorP = new List<Vector3>();
+    DragDrop dragScript;
 
     // Start is called before the first frame update
     void Start()
     {
         SS = GetComponent<RectTransform>();
         correct = false;
-
+        dragScript = GetComponent<DragDrop>();
     }
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(dragScript.canDrag);
+    }
+    public void IsAnchor()
+    {
+        for (int i = 0; i<anchorP.Count; i++)
+        {
+            if ( SS.localPosition == anchorP[i])
+            {
+                dragScript.canDrag = false;
+               
+            }
+        }
     }
     public void CheckC()
     {

@@ -139,9 +139,9 @@ public class SMPlay1 : MonoBehaviour
             b1c.GetComponent<Image>().color = Color.green;
             Text1.GetComponent<Text>().color = Color.green;
             b1c.GetComponent<Button>().interactable = false;
-            b1i1.gameObject.SetActive(false);
-            b1i2.gameObject.SetActive(false);
-            b1i3.gameObject.SetActive(false);
+            b1i1.GetComponent<Button>().interactable = false;
+            b1i2.GetComponent<Button>().interactable = false;
+            b1i3.GetComponent<Button>().interactable = false;
         }
         if (currentGameState == GameState.K3State)
         {
@@ -151,9 +151,9 @@ public class SMPlay1 : MonoBehaviour
             b2c.GetComponent<Image>().color = Color.green;
             Text2.GetComponent<Text>().color = Color.green;
             b2c.GetComponent<Button>().interactable = false;
-            b2i1.gameObject.SetActive(false);
-            b2i2.gameObject.SetActive(false);
-            b2i3.gameObject.SetActive(false);
+            b2i1.GetComponent<Button>().interactable = false;
+            b2i2.GetComponent<Button>().interactable = false;
+            b2i3.GetComponent<Button>().interactable = false;
         }
         if (currentGameState == GameState.K4State)
         {
@@ -163,9 +163,9 @@ public class SMPlay1 : MonoBehaviour
             b3c.GetComponent<Image>().color = Color.green;
             Text3.GetComponent<Text>().color = Color.green;
             b3c.GetComponent<Button>().interactable = false;
-            b3i1.gameObject.SetActive(false);
-            b3i2.gameObject.SetActive(false);
-            b3i3.gameObject.SetActive(false);
+            b3i1.GetComponent<Button>().interactable = false;
+            b3i2.GetComponent<Button>().interactable = false;
+            b3i3.GetComponent<Button>().interactable = false;
         }
         if (currentGameState == GameState.K5State)
         {
@@ -175,9 +175,9 @@ public class SMPlay1 : MonoBehaviour
             b4c.GetComponent<Image>().color = Color.green;
             Text4.GetComponent<Text>().color = Color.green;
             b4c.GetComponent<Button>().interactable = false;
-            b4i1.gameObject.SetActive(false);
-            b4i2.gameObject.SetActive(false);
-            b4i3.gameObject.SetActive(false);
+            b4i1.GetComponent<Button>().interactable = false;
+            b4i2.GetComponent<Button>().interactable = false;
+            b4i3.GetComponent<Button>().interactable = false;
         }
 
     }
@@ -188,40 +188,48 @@ public class SMPlay1 : MonoBehaviour
             Text1.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b1i1.GetComponent<Image>().color = Color.red;
+            b1i1.GetComponent<Button>().interactable = false;
             Text1.GetComponent<Text>().color = Color.red;
-            b1c.gameObject.SetActive(false);
-            b1i2.gameObject.SetActive(false);
-            b1i3.gameObject.SetActive(false);
+            b1c.GetComponent<Button>().interactable = false;
+            b1c.GetComponent<Image>().color = Color.green;
+            b1i2.GetComponent<Button>().interactable = false;
+            b1i3.GetComponent<Button>().interactable = false;
         }
         if (currentGameState == GameState.K3State)
         {
             Text2.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b2i1.GetComponent<Image>().color = Color.red;
+            b2i1.GetComponent<Button>().interactable = false;
             Text2.GetComponent<Text>().color = Color.red;
-            b2c.gameObject.SetActive(false);
-            b2i2.gameObject.SetActive(false);
-            b2i3.gameObject.SetActive(false);
+            b2c.GetComponent<Button>().interactable = false;
+            b2c.GetComponent<Image>().color = Color.green;
+            b2i2.GetComponent<Button>().interactable = false;
+            b2i3.GetComponent<Button>().interactable = false;
         }
         if (currentGameState == GameState.K4State)
         {
             Text3.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b3i1.GetComponent<Image>().color = Color.red;
+            b3i1.GetComponent<Button>().interactable = false;
             Text3.GetComponent<Text>().color = Color.red;
-            b3c.gameObject.SetActive(false);
-            b3i2.gameObject.SetActive(false);
-            b3i3.gameObject.SetActive(false);
+            b3c.GetComponent<Button>().interactable = false;
+            b3c.GetComponent<Image>().color = Color.green;
+            b3i2.GetComponent<Button>().interactable = false;
+            b3i3.GetComponent<Button>().interactable = false;
         }
         if (currentGameState == GameState.K5State)
         {
             Text4.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b4i1.GetComponent<Image>().color = Color.red;
+            b4i1.GetComponent<Button>().interactable = false;
             Text4.GetComponent<Text>().color = Color.red;
-            b4c.gameObject.SetActive(false);
-            b4i2.gameObject.SetActive(false);
-            b4i3.gameObject.SetActive(false);
+            b4c.GetComponent<Button>().interactable = false;
+            b4c.GetComponent<Image>().color = Color.green;
+            b4i2.GetComponent<Button>().interactable = false;
+            b4i3.GetComponent<Button>().interactable = false;
         }
     }
     public void Incorrect2()
@@ -231,40 +239,48 @@ public class SMPlay1 : MonoBehaviour
             Text1.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b1i2.GetComponent<Image>().color = Color.red;
+            b1i2.GetComponent<Button>().interactable = false;
             Text1.GetComponent<Text>().color = Color.red;
-            b1c.gameObject.SetActive(false);
-            b1i1.gameObject.SetActive(false);
-            b1i3.gameObject.SetActive(false);
+            b1c.GetComponent<Button>().interactable = false;
+            b1c.GetComponent<Image>().color = Color.green;
+            b1i1.GetComponent<Button>().interactable = false;
+            b1i3.GetComponent<Button>().interactable = false;
         }
         if (currentGameState == GameState.K3State)
         {
             Text2.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b2i2.GetComponent<Image>().color = Color.red;
+            b2i2.GetComponent<Button>().interactable = false;
             Text2.GetComponent<Text>().color = Color.red;
-            b2c.gameObject.SetActive(false);
-            b2i1.gameObject.SetActive(false);
-            b2i3.gameObject.SetActive(false);
+            b2c.GetComponent<Button>().interactable = false;
+            b2c.GetComponent<Image>().color = Color.green;
+            b2i1.GetComponent<Button>().interactable = false;
+            b2i3.GetComponent<Button>().interactable = false;
         }
         if (currentGameState == GameState.K4State)
         {
             Text3.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b3i2.GetComponent<Image>().color = Color.red;
+            b3i2.GetComponent<Button>().interactable = false;
             Text3.GetComponent<Text>().color = Color.red;
-            b3c.gameObject.SetActive(false);
-            b3i1.gameObject.SetActive(false);
-            b3i3.gameObject.SetActive(false);
+            b3c.GetComponent<Button>().interactable = false;
+            b3c.GetComponent<Image>().color = Color.green;
+            b3i1.GetComponent<Button>().interactable = false;
+            b3i3.GetComponent<Button>().interactable = false;
         }
         if (currentGameState == GameState.K5State)
         {
             Text4.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b4i2.GetComponent<Image>().color = Color.red;
+            b4i2.GetComponent<Button>().interactable = false;
             Text4.GetComponent<Text>().color = Color.red;
-            b4c.gameObject.SetActive(false);
-            b4i1.gameObject.SetActive(false);
-            b4i3.gameObject.SetActive(false);
+            b4c.GetComponent<Button>().interactable = false;
+            b4c.GetComponent<Image>().color = Color.green;
+            b4i1.GetComponent<Button>().interactable = false;
+            b4i3.GetComponent<Button>().interactable = false;
         }
     }
     public void Incorrect3()
@@ -274,40 +290,48 @@ public class SMPlay1 : MonoBehaviour
             Text1.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b1i3.GetComponent<Image>().color = Color.red;
+            b1i3.GetComponent<Button>().interactable = false;
             Text1.GetComponent<Text>().color = Color.red;
-            b1c.gameObject.SetActive(false);
-            b1i2.gameObject.SetActive(false);
-            b1i1.gameObject.SetActive(false);
+            b1c.GetComponent<Button>().interactable = false;
+            b1c.GetComponent<Image>().color = Color.green;
+            b1i2.GetComponent<Button>().interactable = false;
+            b1i1.GetComponent<Button>().interactable = false;
         }
         if (currentGameState == GameState.K3State)
         {
             Text2.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b2i3.GetComponent<Image>().color = Color.red;
+            b2i3.GetComponent<Button>().interactable = false;
             Text2.GetComponent<Text>().color = Color.red;
-            b2c.gameObject.SetActive(false);
-            b2i2.gameObject.SetActive(false);
-            b2i1.gameObject.SetActive(false);
+            b2c.GetComponent<Button>().interactable = false;
+            b2c.GetComponent<Image>().color = Color.green;
+            b2i2.GetComponent<Button>().interactable = false;
+            b2i1.GetComponent<Button>().interactable = false;
         }
         if (currentGameState == GameState.K4State)
         {
             Text3.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b3i3.GetComponent<Image>().color = Color.red;
+            b3i3.GetComponent<Button>().interactable = false;
             Text3.GetComponent<Text>().color = Color.red;
-            b3c.gameObject.SetActive(false);
-            b3i2.gameObject.SetActive(false);
-            b3i1.gameObject.SetActive(false);
+            b3c.GetComponent<Button>().interactable = false;
+            b3c.GetComponent<Image>().color = Color.green;
+            b3i2.GetComponent<Button>().interactable = false;
+            b3i1.GetComponent<Button>().interactable = false;
         }
         if (currentGameState == GameState.K5State)
         {
             Text4.text = "Sorry, that is incorrect";
             audioSource.PlayOneShot(IncorrectSound);
             b4i3.GetComponent<Image>().color = Color.red;
+            b4i3.GetComponent<Button>().interactable = false;
             Text4.GetComponent<Text>().color = Color.red;
-            b4c.gameObject.SetActive(false);
-            b4i2.gameObject.SetActive(false);
-            b4i1.gameObject.SetActive(false);
+            b4c.GetComponent<Button>().interactable = false;
+            b4c.GetComponent<Image>().color = Color.green;
+            b4i2.GetComponent<Button>().interactable = false;
+            b4i1.GetComponent<Button>().interactable = false;
         }
     }
 
