@@ -52,7 +52,7 @@ public class SMPlay2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HiText.text = "Hi there " + PN2 + ", today we will be matching Diseases to their proper symptoms. Each correct answer will give you 25 points. If you get it wrong, you lose 25 points. Let see how many point can you get.";
+        HiText.text = "Hello " + PN2 + ", today we will be matching dermatological conditions to their respective pictures. Each correct answer will add 25 points to your total score. If you match a dermatological condition to the wrong picture, 25 points will be deducted from your total score.  Good luck!";
         CSound();
     }
 
@@ -144,23 +144,23 @@ public class SMPlay2 : MonoBehaviour
         FinalScore.text = "Score: " + Score;
         if (Score <= 0)
         {
-            Checkcheck.text = "Such a disgrace?";
+            Checkcheck.text = "Big oof...";
         }
         else if (Score == 25)
         {
-            Checkcheck.text = "Your mom feels bad about you";
+            Checkcheck.text = "You need to take a look at the material again...";
         }
         else if (Score == 50)
         {
-            Checkcheck.text = "Come on, you're more than that";
+            Checkcheck.text = "Maybe you need to review some things...";
         }
         else if (Score == 75)
         {
-            Checkcheck.text = "Hey, that was pretty good";
+            Checkcheck.text = "So close...";
         }
         else if (Score == 100)
         {
-            Checkcheck.text = "Genius. I'm proud of you!";
+            Checkcheck.text = "Good job, you got all of them right...";
         }
     }
 
