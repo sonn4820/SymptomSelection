@@ -129,7 +129,7 @@ public class SMPlay1 : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
-    
+ 
     public void Correct()
     {
         if (currentGameState == GameState.K2State)
@@ -139,9 +139,11 @@ public class SMPlay1 : MonoBehaviour
             audioSource.PlayOneShot(CorrectSound);
             b1c.GetComponent<Image>().color = Color.green;
             Text1.GetComponent<Text>().color = Color.green;
+            b1c.gameObject.GetComponent<Button>().interactable = false;
             b1i1.gameObject.SetActive(false);
             b1i2.gameObject.SetActive(false);
             b1i3.gameObject.SetActive(false);
+            
         }
         if (currentGameState == GameState.K3State)
         {
@@ -150,6 +152,7 @@ public class SMPlay1 : MonoBehaviour
             audioSource.PlayOneShot(CorrectSound);
             b2c.GetComponent<Image>().color = Color.green;
             Text2.GetComponent<Text>().color = Color.green;
+            b2c.gameObject.GetComponent<Button>().interactable = false;
             b2i1.gameObject.SetActive(false);
             b2i2.gameObject.SetActive(false);
             b2i3.gameObject.SetActive(false);
@@ -161,6 +164,7 @@ public class SMPlay1 : MonoBehaviour
             audioSource.PlayOneShot(CorrectSound);
             b3c.GetComponent<Image>().color = Color.green;
             Text3.GetComponent<Text>().color = Color.green;
+            b3c.gameObject.GetComponent<Button>().interactable = false;
             b3i1.gameObject.SetActive(false);
             b3i2.gameObject.SetActive(false);
             b3i3.gameObject.SetActive(false);
@@ -172,6 +176,7 @@ public class SMPlay1 : MonoBehaviour
             audioSource.PlayOneShot(CorrectSound);
             b4c.GetComponent<Image>().color = Color.green;
             Text4.GetComponent<Text>().color = Color.green;
+            b4c.gameObject.GetComponent<Button>().interactable = false;
             b4i1.gameObject.SetActive(false);
             b4i2.gameObject.SetActive(false);
             b4i3.gameObject.SetActive(false);
