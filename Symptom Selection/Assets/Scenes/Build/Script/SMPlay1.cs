@@ -69,7 +69,6 @@ public class SMPlay1 : MonoBehaviour
     void Update()
     {
         FinalScore();
-        HiText.text = "Hi " + PN1 + ", let's test your skill. Each correct answer will give you 25 points. If you get it wrong, you lose 25 points. Let see how many point can you get.";
         
  
     }
@@ -129,7 +128,7 @@ public class SMPlay1 : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
- 
+    
     public void Correct()
     {
         if (currentGameState == GameState.K2State)
@@ -139,11 +138,9 @@ public class SMPlay1 : MonoBehaviour
             audioSource.PlayOneShot(CorrectSound);
             b1c.GetComponent<Image>().color = Color.green;
             Text1.GetComponent<Text>().color = Color.green;
-            b1c.gameObject.GetComponent<Button>().interactable = false;
             b1i1.gameObject.SetActive(false);
             b1i2.gameObject.SetActive(false);
             b1i3.gameObject.SetActive(false);
-            
         }
         if (currentGameState == GameState.K3State)
         {
@@ -152,7 +149,6 @@ public class SMPlay1 : MonoBehaviour
             audioSource.PlayOneShot(CorrectSound);
             b2c.GetComponent<Image>().color = Color.green;
             Text2.GetComponent<Text>().color = Color.green;
-            b2c.gameObject.GetComponent<Button>().interactable = false;
             b2i1.gameObject.SetActive(false);
             b2i2.gameObject.SetActive(false);
             b2i3.gameObject.SetActive(false);
@@ -164,7 +160,6 @@ public class SMPlay1 : MonoBehaviour
             audioSource.PlayOneShot(CorrectSound);
             b3c.GetComponent<Image>().color = Color.green;
             Text3.GetComponent<Text>().color = Color.green;
-            b3c.gameObject.GetComponent<Button>().interactable = false;
             b3i1.gameObject.SetActive(false);
             b3i2.gameObject.SetActive(false);
             b3i3.gameObject.SetActive(false);
@@ -176,7 +171,6 @@ public class SMPlay1 : MonoBehaviour
             audioSource.PlayOneShot(CorrectSound);
             b4c.GetComponent<Image>().color = Color.green;
             Text4.GetComponent<Text>().color = Color.green;
-            b4c.gameObject.GetComponent<Button>().interactable = false;
             b4i1.gameObject.SetActive(false);
             b4i2.gameObject.SetActive(false);
             b4i3.gameObject.SetActive(false);
@@ -318,23 +312,23 @@ public class SMPlay1 : MonoBehaviour
         TextFinal.text = "Your Score is " + S;
         if (S <= 0)
         {
-            Checkcheck.text = "Such a disgrace";
+            Checkcheck.text = "Go back to the books...";
         }
         else if (S == 25)
         {
-            Checkcheck.text = "Your mom feels bad about you";
+            Checkcheck.text = "Why don't you go study a bit more...";
         }
         else if (S == 50)
         {
-            Checkcheck.text = "Come on, you're more than that";
+            Checkcheck.text = "You're halfway there...";
         }
         else if (S == 75)
         {
-            Checkcheck.text = "Hey, that was pretty good";
+            Checkcheck.text = "Almost...";
         }
         else if (S == 100)
         {
-            Checkcheck.text = "Genius. I'm proud of you!";
+            Checkcheck.text = "Very good!  Looks like you know your stuff...";
         }
 
     }

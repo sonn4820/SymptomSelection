@@ -59,7 +59,7 @@ public class GMBegin : MonoBehaviour
     public void SetGetName()
     { 
         PlayerName = pName.text;
-        tellPlayerHi.text = "Oh, here you are " + PlayerName + ", welcome to my classroom";
+        tellPlayerHi.text = "Hello " + PlayerName + ", welcome to my classroom";
         Debug.Log(PlayerPrefs.GetString("PN"));
     }
 }
